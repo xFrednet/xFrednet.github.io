@@ -1,58 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <title>Fridtjof Stoldt</title>
 </head>
+
 <body>
-    <div class="sidebar">
-        <h1>Fridtjof Stoldt</h1>
-        <h2>@xFrednet</h2>
-        <img src="assets/xfrednet.png" alt="xFrednet's Avatar: a penguin with a top hat" class="round-image">
-        <p>
-            PhD Student at
-            <a href="https://www.uu.se/en/department/information-technology" target="_blank">Uppsala University</a>
-            <br>
-        </p>
+    <header>
+        <div>
+            <h1>Fridtjof Stoldt</h1>
+            <h2>@xFrednet</h2>
+            <img src="./assets/xfrednet.png" alt="xFrednet's Avatar: a penguin with a top hat" class="round-image">
+            <p class="text-center">
+                PhD Student<br>
+                Dept. of Information Technology<br>
+                <a href="https://www.uu.se" target="_blank">Uppsala University</a>
+                <br>
+            </p>
+        </div>
 
-        <h3>Supervisors:</h3><!-- And super amazing people! -->
-        <ul class="links-list">
-            <li><a href="https://wrigstad.com/" target="_blank" title="Supervisor 1: Tobias Wrigstad">
-                <i class="fa-solid fa-user"></i>
-                Tobias Wrigstad
-            </a></li>
+        <div>
+            <h3>Supervisors:</h3><!-- And super amazing people! -->
+            <ul class="links-list">
+                <li><a href="https://wrigstad.com/" target="_blank" title="Supervisor 1: Tobias Wrigstad">
+                        <i class="fa-solid fa-user"></i> Tobias Wrigstad
+                    </a></li>
 
-            <li><a href="https://malyzajko.github.io/" target="_blank" title="Supervisor 2: Eva Darulova">
-                <i class="fa-solid fa-user"></i>
-                Eva Darulova
-            </a></li>
-        </ul>
-        
-        <h3>Links:</h3>
-        <ul class="links-list">
-            <li><a href="mailto:fridtjof.stoldt@it.uu.se" target="_blank" title="E-Mail">
-                <i class="fa-solid fa-envelope"></i>
-                E-Mail
-            </a></li>
+                <li><a href="https://malyzajko.github.io/" target="_blank" title="Supervisor 2: Eva Darulova">
+                        <i class="fa-solid fa-user"></i> Eva Darulova
+                    </a></li>
+            </ul>
+        </div>
+    </header>
 
-            <li><a href="https://github.com/xFrednet" target="_blank" title="GitHub">
-                <i class="fab fa-github"></i> GitHub
-            </a></li>
+    <section>
+        <div>
+            <h1>Research</h1>
 
-            <li><a href="https://orcid.org/0009-0006-5356-280X" target="_blank" title="ORCID">
-                <i class="fab fa-orcid"></i> ORCID
-            </a></li>
+            <p>
+                I'm a PhD student at the <a href="https://it.uu.se" target="_blank">Dept. of Information Technology</a>
+                at <a href="https://www.uu.se" target="_blank">Uppsala University</a>. My main focus is memory safety,
+                concurrency and compiler engineering. Additionally, I'm interested in programming languages, data
+                structures and software analysis.
+            </p>
+            <p>
+                Currently, I'm involved with the
+                <a href="https://www.microsoft.com/en-us/research/project/project-verona/" target="_blank">Verona
+                    Project</a>
+                in co-operation with Azure Research.
+            </p>
 
-            <li><a href="https://www.linkedin.com/in/fridtjof-stoldt/" target="_blank" title="LinkedIn">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a></li>
-        </ul>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    FrankenScript - A tool to explore region-based ownership for dynamic programming languages<br>
+                    (<a href="https://github.com/fxpl/frankenscript" target="_blank">GitHub</a>)
+                </li>
+            </ul>
 
-    </div>
-    <div class="content">Beautiful content</div>
+            <h2>Publications</h2>
+
+            <ul>
+                <li>
+                    WIP :P
+                </li>
+            </ul>
+
+            <!-- <h2>Community Service</h2> -->
+
+            <h2>Presentations</h2>
+
+            <table class="date-table">
+                <tr>
+                    <td>2024</td>
+                    <td>
+                        Ownership Patterns in Rust<br>
+                        Intel, Stockholm
+                    </td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>
+                        Region-Based Ownership for Dynamic Programming Languages<br>
+                        Microsoft Research, Cambridge
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h1>Teaching</h1>
+
+            <p>
+                During my studies, I've had some amazing teachers. I want to become a teacher who inspires students and
+                makes learning fun.
+            </p>
+
+            <table class="date-table">
+                <tr>
+                    <td nowrap>2023 - 2024</td>
+                    <td>
+                        Teaching Assistant: Concurrent Algorithms and Data Structures<br>
+                        (5 ECTS, UU)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h1>Volunteering</h1>
+
+            <p>
+                I love being involved in all sorts of things. For me, volunteering is a good way to have some beautiful
+                chaos in my life while also having an impact. These are some of the projects I've been part of over the
+                years:
+            </p>
+
+            <h2>Open-Source</h2>
+            <table class="date-table">
+                <tr>
+                    <td nowrap>2021 - 2025</td>
+                    <td>
+                        Maintainer of Clippy, Rust's linter<br>
+                        (<a href="https://github.com/rust-lang/rust-clippy" target="_blank">GitHub</a>)
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap>2020 - 2025</td>
+                    <td>
+                        Contributor to Clippy and Rust<br>
+                        (<a href="https://github.com/pulls?q=is%3Apr+author%3AxFrednet+archived%3Afalse+org%3Arust-lang+"
+                            target="_blank">Created PRs</a>)
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Student Representation</h2>
+            <table class="date-table">
+                <tr>
+                    <td>2025</td>
+                    <td>IT PhD Student Board at the IT-Department at Uppsala University</td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Helper at the Master and Exchange Reception 2024 from <a href="https://utn.se/"
+                            target="_blank">UTN</a></td>
+                </tr>
+                <tr>
+                    <td nowrap>2023 - 2024</td>
+                    <td>UTN International Committee at <a href="https://utn.se/" target="_blank">UTN</a></td>
+                </tr>
+                <tr>
+                    <td nowrap>2023 - 2024</td>
+                    <td>Master in Computer Science Program Board at Uppsala University</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Helper at the Master and Exchange Reception 2023 from <a href="https://utn.se/"
+                            target="_blank">UTN</a></td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Information Technology Department Board at Uppsala University</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h1>Free time</h1>
+
+            My free time is usually all over the place. These are some things I usually do at least once a month:
+
+            <ul>
+                <li>Mountain Biking</li>
+                <li>Geocaching</li>
+                <li>Bouldering</li>
+                <li>Inline/Ice Skating</li>
+            </ul>
+
+            <p>
+                And last but not least, I listen to a lot of music. Mainly Metal, Punk and EDM, but my playlist is
+                basically a zoo of all music genres.
+            </p>
+
+            <p>
+                That's it about me. I hope that everyone reading this has a beautiful day :D
+            </p>
+
+            <!--
+                 Here is the listening statistic from last year:
+                 2024: 83'370 minutes of music (+12'031 minutes of podcasts)
+            -->
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h3>Links:</h3>
+            <ul class="links-list">
+                <li><a href="mailto:fridtjof.stoldt@it.uu.se" target="_blank" title="E-Mail">
+                        <i class="fa-solid fa-envelope"></i> E-Mail
+                    </a></li>
+
+                <li><a href="https://github.com/xFrednet" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a></li>
+
+                <li><a href="https://orcid.org/0009-0006-5356-280X" target="_blank" title="ORCID">
+                        <i class="fab fa-orcid"></i> ORCID
+                    </a></li>
+
+                <li><a href="https://www.linkedin.com/in/fridtjof-stoldt/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

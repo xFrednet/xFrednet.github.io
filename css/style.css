@@ -1,23 +1,78 @@
 body {
+    --body-width: 1000px;
+    --sidebar-width: 250px;
+    --image-width: 250px;
+    --content-width: calc(var(--body-width) - var(--sidebar-width) - 3em);
+    --link-color: #04B;
+    --text-color: #444;
+    --heading-color: #222;
+    --bottom-padding: 50px;
+    --separator-color: #ccc;
+}
+
+body {
     font-family: Arial, sans-serif;
-    max-width: 1024px;
-    margin: 0;
+    width: var(--body-width);
     margin-left: auto;
     margin-right: auto;
-
-    --sidebar-width: 250px;
-    --link-color: #04B;
+    color: var(--text-color)
 }
 
-.sidebar {
-    position: relative;
-    top: 0;
-    height: 100%;
+h1, h2, h3, h4 {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    color: var(--heading-color);
+}
+
+h1 {
+    margin-top: 1em;
+    font-size: 1.6em;
+    border-bottom: var(--separator-color) 1px solid;
+}
+h2 {
+    font-size: 1.4em;
+}
+h3 {
+    font-size: 1.2em;
+}
+
+header, footer {
+    position: fixed;
     width: var(--sidebar-width);
+    float: left;
 }
 
-.content {
-    margin-left: var(--sidebar-width);
+footer {
+    bottom: 0;
+    padding-bottom: var(--bottom-padding);
+}
+
+section {
+    float: right;
+    width: var(--content-width);
+    padding-bottom: var(--bottom-padding);
+}
+
+@media print, screen and (max-width: 1000px) {
+    header, section, footer {
+        float: none;
+        width: auto;
+        position: static;
+    }
+    header {
+        text-align: center;
+    }
+    section {
+        padding-bottom: 1em;
+    }
+    footer {
+        border-top: var(--separator-color) 1px solid;
+    }
+    body {
+        margin-left: 1em;
+        margin-right: 1em;
+        width: auto;
+    }
 }
 
 a {
@@ -28,14 +83,22 @@ a:hover {
     text-shadow: 0 0 1px var(--link-color);
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* ====================================
 * sidebar
 * ====================================
 */
+header h3 {
+    margin-top: 2em;
+}
+
 .round-image {
     border-radius: 50%;
-    width: 100%;
-    border: 1px #ccc solid;
+    max-width: var(--image-width);
+    border: var(--separator-color) solid 1px;
 }
 
 .links-list {
@@ -52,3 +115,16 @@ a:hover {
     width: 1em;
 }
 
+/* ====================================
+* Content
+* ====================================
+*/
+.date-table td:first-child {
+    font-weight: bold;
+    padding-right: 0.5em;
+    text-align: right;
+}
+
+.date-table * {
+    vertical-align: top;
+}

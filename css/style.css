@@ -4,8 +4,9 @@ body {
     --image-width: 250px;
     --content-width: calc(var(--body-width) - var(--sidebar-width) - 3em);
     --link-color: #04B;
-    --text-color: #444;
-    --heading-color: #222;
+    --meta-text-color: #666;
+    --text-color: #333;
+    --heading-color: #111;
     --bottom-padding: 50px;
     --separator-color: #ccc;
 }
@@ -127,4 +128,8 @@ header h3 {
 
 .date-table * {
     vertical-align: top;
+}
+
+.meta-text {
+    color: var(--meta-text-color);
 }
